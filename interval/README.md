@@ -1,4 +1,4 @@
-# 🟢 Interval
+# ✅ Interval
 
 Interval questions are a subset of array questions where you are given an array of two-element arrays  and the two values represent a start and an end value.&#x20;
 
