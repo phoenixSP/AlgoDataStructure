@@ -26,7 +26,7 @@
   * [🟡 Implement Trie (Prefix Tree)](trie/implement-trie-prefix-tree.md)
   * [🟡 Design Add and Search Words Data Structure](trie/design-add-and-search-words-data-structure.md)
   * [🔴 Word Search II](trie/word-search-ii.md)
-* [Interval](interval/README.md)
+* [💯 Interval](interval/README.md)
   * [🟡 Insert interval](interval/insert-interval.md)
   * [🟡 Merge interval](interval/merge-interval.md)
   * [🟡 Non-overlapping Intervals](interval/non-overlapping-intervals.md)
