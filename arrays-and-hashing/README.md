@@ -11,15 +11,7 @@
 
 #### Time Complexity
 
-| Operation                 | Big-O	  | Note                                                                                                 |
-| ------------------------- | ------- | ---------------------------------------------------------------------------------------------------- |
-| Access                    | O(1)    |                                                                                                      |
-| Search                    | O(n)    |                                                                                                      |
-| Sorted search             | O(logn) |                                                                                                      |
-| Insertion                 | O(n)    | Insertion would require shifting all the subsequent elements to the right by one and that takes O(n) |
-| Insert (at the end)       | O(1)    | No element need to be shifted                                                                        |
-| Remove/pop using index    | O(n)    | Removal would require shifting all the subsequent elements to the left by one and that takes O(n)    |
-| Remove (at the end)/pop() | O(1)    | No element need to be shifted                                                                        |
+<table><thead><tr><th width="264">Operation</th><th width="228">Big-O	</th><th>Note</th></tr></thead><tbody><tr><td>Access</td><td>O(1)</td><td></td></tr><tr><td>Search</td><td>O(n)</td><td></td></tr><tr><td>Sorted search</td><td>O(logn)</td><td></td></tr><tr><td>Insertion</td><td>O(n)</td><td>Insertion would require shifting all the subsequent elements to the right by one and that takes O(n)</td></tr><tr><td>Insert (at the end)</td><td>O(1)</td><td>No element need to be shifted</td></tr><tr><td>Remove/pop using index</td><td>O(n)</td><td>Removal would require shifting all the subsequent elements to the left by one and that takes O(n)</td></tr><tr><td>Remove (at the end)/pop()</td><td>O(1)</td><td>No element need to be shifted</td></tr></tbody></table>
 
 #### Techniques
 
