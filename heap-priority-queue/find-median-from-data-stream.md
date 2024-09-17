@@ -6,6 +6,7 @@ Implement the MedianFinder class:
 * `void addNum(int num)` adds the integer `num` from the data stream to the data structure.
 * `double findMedian()` returns the median of all elements so far. Answers within `10-5` of the actual answer will be accepted.
 
+{% code overflow="wrap" %}
 ```python
 # Leetcode 295: https://leetcode.com/problems/find-median-from-data-stream/description/
 
@@ -17,7 +18,7 @@ class MedianFinder:
     Solution: 
     - Maintain two heaps, a max heap and a min heap. The maxHeap contains all the numbers to the left/including median and the minHeap contains the numbers to greater/including the median
     - Insert each number into the max heap if it is smaller than the root of the max heap, and into the min heap otherwise
-    - Balance the heaps by transferring the roots between the heaps
+    - Balance the heaps by transfering the roots between the heaps
     - Calculate the median by taking the average of the roots of both heaps if they are of equal size, or by taking the root of the max heap otherwise.
 
     TC: Number addition O(logn); Median calculation O(1)
@@ -49,6 +50,7 @@ class MedianFinder:
         else:
             return 0.5*(-self.max_heap[0] + self.min_heap[0])
 ```
+{% endcode %}
 
 
 
