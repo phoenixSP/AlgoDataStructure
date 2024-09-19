@@ -4,6 +4,7 @@ Given an integer array `nums` and an integer `k`, return _the_ `k` _most frequen
 
 {% code overflow="wrap" %}
 ```python
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         '''
@@ -16,7 +17,7 @@ class Solution:
         
         Solution 2:
         Create count hashmap, create maxheap, and pop k times
-        TC: O(n), SC: O(n)
+        TC: O(nlogk), SC: O(n)
         '''
         counter = {}
         frequency_arr = [[] for i in range(len(nums)+1)] # 0 = 0 frequency; max frequency possiblem is len(nums)
@@ -40,3 +41,7 @@ class Solution:
         return # not necessary
 ```
 {% endcode %}
+
+Solution 2: Using heaps
+
+[Solution](../heap-priority-queue/top-k-frequent-elements.md)
