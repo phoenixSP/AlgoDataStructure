@@ -18,7 +18,7 @@
 * [Binary Search](binary-search.md)
 * [Linked List](linked-list.md)
 * [Tree](tree.md)
-* [Heap/Priority Queue](heap-priority-queue/README.md)
+* [💯 Heap/Priority Queue](heap-priority-queue/README.md)
   * [🔴 Find Median from Data Stream](heap-priority-queue/find-median-from-data-stream.md)
   * [🔴 Merge K sorted lists](heap-priority-queue/merge-k-sorted-lists.md)
   * [🟡 K Closest Points to Origin](heap-priority-queue/k-closest-points-to-origin.md)
