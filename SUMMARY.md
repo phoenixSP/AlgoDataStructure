@@ -23,6 +23,7 @@
   * [Maximum Depth of Binary Tree](tree/maximum-depth-of-binary-tree.md)
   * [Same Tree](tree/same-tree.md)
   * [Subtree of Another Tree](tree/subtree-of-another-tree.md)
+  * [Lowest Common Ancestor of a Binary Search Tree](tree/lowest-common-ancestor-of-a-binary-search-tree.md)
   * [Balanced Binary Tree](tree/balanced-binary-tree.md)
 * [💯 Heap/Priority Queue](heap-priority-queue/README.md)
   * [🔴 Find Median from Data Stream](heap-priority-queue/find-median-from-data-stream.md)
