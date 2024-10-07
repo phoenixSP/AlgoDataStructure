@@ -9,8 +9,12 @@ The word can be constructed from letters of sequentially adjacent cells, where a
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         '''
+        Solution: 
+        - We use backtracking as we need to do dfs on the "graph"/grid
+        - Normal DFS is used to traverse only one path without backtracking, whereas backtracking DFS does it differently (by backtracking out of failing paths)
+        
         TC: O(m*n*dfs) -> O(m*n*4^L)
-        dfs = 4^len(word) because each position in the word can lead to 4 potential moves, and that can happen max L times 
+        TC of Backtracking dfs = 4^len(word) because each position in the word can lead to 4 potential moves, and that can happen max L times 
         '''
         
         def dfs(i,j, index, visited):
