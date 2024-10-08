@@ -130,6 +130,8 @@ print(get_path(0, 2, prev))
 ```
 {% endcode %}
 
+We would only traverse the connected component that contains the starting node by using the above code.
+
 ## DFS Traversal
 
 {% code overflow="wrap" %}
@@ -191,6 +193,8 @@ print("Number of connected components", count)
 print("All connected components", components)
 ```
 {% endcode %}
+
+Connected component can be calculated using BFS as well, we just have to iterate over all the nodes.&#x20;
 
 ## Topological Sort
 
