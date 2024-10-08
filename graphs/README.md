@@ -2,20 +2,52 @@
 
 ## Basics
 
-Graph consists of a finite set of vertices (nodes) and set of edges between the vertices (undirected/directed edges). Edges can be defined using an edge list or an adjacency matrix.
+Graph is a data structure that consists of a finite set of vertices (nodes) and set of edges between the vertices (undirected/directed edges). Edges can be defined using an edge list or an adjacency matrix.
 
-The Adjacency matrix of an undirected graph is symmetric in nature, whereas it is not for a directed graph.&#x20;
+Graph representations
 
-Adjacency matrices are easier to follow and represent, and look up, insertion, and deletion can be done in O(1) constant time. However it takes up O(V^2) space, which does not make sense if the graph is sparse
+* Adjancency matrix
 
-Adjacency list is an array of linked list that represents the graph. TC:\
-\- Retrieving the neighbors of a vertex: O(1)\
-\- Find specifc edge (x,y): O(d) where d = degree of vertex
+Adjacency matrix of an undirected graph is symmetric in nature, whereas it is not for a directed graph.&#x20;
+
+Adjacency matrices are easier to follow and represent, and look up. Insertion and deletion can be done in O(1) constant time. However it takes up O(V^2) space, which does not make sense if the graph is sparse.&#x20;
+
+* Adjacency list is an array of linked list that represents the graph. It can be used when the graph is sparse
+
+Time complexity of retrieving the neighbors of a vertex is O(1) and finding a specifc edge (x,y) is O(d) where d = degree of vertex
+
+* Hash table of hash tables
+
+Using a hash table of hash tables would be the simplest approach during algorithm interviews. It will be rare that you have to use an adjacency matrix or list for graph questions during interviews.
+
+## Time complexity
+
+| Operation            | Time complexity  |
+| -------------------- | ---------------- |
+| Depth-first search   | O(\|V\| + \|E\|) |
+| Breadth-first search | O(\|V\| + \|E\|) |
+| Topological sort     | O(\|V\| + \|E\|) |
 
 Maximum value for degree d = |V| - 1 (edges to all vertices except itself)\
 Minimum value = 0 (isolated vertex)
 
-Reference: [https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38](https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38)
+## Things to look out for during interviews <a href="#things-to-look-out-for-during-interviews" id="things-to-look-out-for-during-interviews"></a>
+
+* A graph may look tree like, but it may allow for cycles. Naive recursive solutions would fail in these situations, so the algorithm should handle cycles and use a set for tracking visited nodes
+* Ensure you are correctly keeping track of visited nodes and not visiting each node more than once. Otherwise your code could end up in an infinite loop.
+
+## Corner cases <a href="#corner-cases" id="corner-cases"></a>
+
+* Empty graph
+* Graph with one or two nodes
+* Disconnected graphs
+* Graph with cycles
+
+## Graph search algorithms <a href="#graph-search-algorithms" id="graph-search-algorithms"></a>
+
+* **Common** - Breadth-first Search, Depth-first Search
+* **Uncommon** - Topological Sort, Dijkstra's algorithm
+* **Almost never** - Bellman-Ford algorithm, Floyd-Warshall algorithm, Prim's algorithm, Kruskal's algorithm
 
 ## BFS Traversal
 
@@ -157,3 +189,12 @@ print("Number of connected components", count)
 print("All connected components", components)
 ```
 {% endcode %}
+
+## Topological Sort
+
+TODO
+
+## References
+
+* [https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38](https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38)
+* [https://www.techinterviewhandbook.org/algorithms/graph/](https://www.techinterviewhandbook.org/algorithms/graph/)
