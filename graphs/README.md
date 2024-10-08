@@ -35,6 +35,7 @@ Minimum value = 0 (isolated vertex)
 
 * A graph may look tree like, but it may allow for cycles. Naive recursive solutions would fail in these situations, so the algorithm should handle cycles and use a set for tracking visited nodes
 * Ensure you are correctly keeping track of visited nodes and not visiting each node more than once. Otherwise your code could end up in an infinite loop.
+* Check if the graph is one connected component, otherwise make sure to visit all nodes
 
 ## Corner cases <a href="#corner-cases" id="corner-cases"></a>
 
