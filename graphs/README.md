@@ -93,6 +93,8 @@ def graph_bfs_traversal(adj_list, start_node):
     return bfs_traversal, prev
     
 def get_path(start_node, end_node, prev):
+    # bottom to top approach is not because of any technical reason but convenience
+    # In many cases under graphs and trees, there are more children than parents, hence it seems like a sound choice
     path = [end_node]
     while end_node:
         end_node = prev[end_node]
