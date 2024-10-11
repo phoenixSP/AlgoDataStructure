@@ -1,4 +1,4 @@
-# Linked List Cycle
+# 🟢 Linked List Cycle
 
 Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
 
@@ -8,5 +8,24 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `false
 
 {% code overflow="wrap" %}
 ```python
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+    '''
+    Solution:
+    - Use a fast and slow pointer to check if the cycle exists
+    - if the cycle exists, the slow and fast pointer will definitely intersect at some point. Else, the fast pointer will reach the end of the linked list
+    '''
+        if head is None:
+            return False
+
+        slow, fast = head, head
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+            if slow == fast:
+                return True
+        return False
 ```
 {% endcode %}
