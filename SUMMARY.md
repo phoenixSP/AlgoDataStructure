@@ -16,7 +16,7 @@
   * [🟢 Best Time to Buy and Sell Stock](sliding-window/best-time-to-buy-and-sell-stock.md)
 * [Stack](stack.md)
 * [Binary Search](binary-search.md)
-* [Linked List](linked-list/README.md)
+* [💯 Linked List](linked-list/README.md)
   * [🟢 Reverse Linked List](linked-list/reverse-linked-list.md)
   * [🟢 Merge Two Sorted Lists](linked-list/merge-two-sorted-lists.md)
   * [🟡 Reorder List](linked-list/reorder-list.md)

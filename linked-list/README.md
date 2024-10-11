@@ -1,4 +1,4 @@
-# Linked List
+# 💯 Linked List
 
 Linked list is used to represent sequential data. It consists of nodes, which stores the value as well as the address of the next node. A linked list is identified by the start node.&#x20;
 
