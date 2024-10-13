@@ -23,6 +23,7 @@
   * [🟡 Remove Nth Node From End of List](linked-list/remove-nth-node-from-end-of-list.md)
   * [🟢 Linked List Cycle](linked-list/linked-list-cycle.md)
   * [🔴 Merge K sorted lists](linked-list/merge-k-sorted-lists.md)
+  * [🟡 LRU Cache](linked-list/lru-cache.md)
 * [Page](page.md)
 * [Tree](tree/README.md)
   * [Invert Binary Tree](tree/invert-binary-tree.md)
