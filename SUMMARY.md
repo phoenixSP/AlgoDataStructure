@@ -24,7 +24,7 @@
   * [🟢 Linked List Cycle](linked-list/linked-list-cycle.md)
   * [🔴 Merge K sorted lists](linked-list/merge-k-sorted-lists.md)
   * [🟡 LRU Cache](linked-list/lru-cache.md)
-  * [Add two numbers](linked-list/add-two-numbers.md)
+  * [🟡 Add two numbers](linked-list/add-two-numbers.md)
 * [Page](page.md)
 * [Tree](tree/README.md)
   * [Invert Binary Tree](tree/invert-binary-tree.md)
