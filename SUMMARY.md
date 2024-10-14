@@ -12,6 +12,8 @@
   * [🟡 Longest Consecutive Sequence](arrays-and-hashing/longest-consecutive-sequence.md)
   * [🟡 Maximum Subarray](arrays-and-hashing/maximum-subarray.md)
 * [Two Pointer](two-pointer/README.md)
+  * [🟢 Valid Palindrome](two-pointer/valid-palindrome.md)
+  * [🟡 3Sum](two-pointer/3sum.md)
   * [🟡 Container With Most Water](two-pointer/container-with-most-water.md)
   * [🔴 Trapping Rain Water](two-pointer/trapping-rain-water.md)
 * [Sliding window](sliding-window/README.md)
