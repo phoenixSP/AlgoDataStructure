@@ -83,7 +83,7 @@ class Solution:
                 while left <= last_occurence:
                     window[s[left]] -= 1
                     if window[s[left]] == 0:
-                        del window[s[left]]
+                        del window[s[left]] #O(1)
                     left += 1
             window[char] = right
             length = max(length, right - left + 1)

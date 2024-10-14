@@ -1,5 +1,35 @@
 # 🟡 Longest Repeating Character Replacement
 
+You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most `k` times.
+
+Return _the length of the longest substring containing the same letter you can get after performing the above operations_.
+
+&#x20;
+
+**Example 1:**
+
+<pre><code><strong>Input: s = "ABAB", k = 2
+</strong><strong>Output: 4
+</strong><strong>Explanation: Replace the two 'A's with two 'B's or vice versa.
+</strong></code></pre>
+
+**Example 2:**
+
+<pre><code><strong>Input: s = "AABABBA", k = 1
+</strong><strong>Output: 4
+</strong><strong>Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA".
+</strong>The substring "BBBB" has the longest repeating letters, which is 4.
+There may exists other ways to achieve this answer too.
+</code></pre>
+
+&#x20;
+
+**Constraints:**
+
+* `1 <= s.length <= 105`
+* `s` consists of only uppercase English letters.
+* `0 <= k <= s.length`
+
 Intuitive solution&#x20;
 
 ```python
@@ -50,7 +80,7 @@ class Solution:
                 window[s[left]] -= 1
                 left += 1
 
-                # recalulcate majority count O(26)
+                # recalulcate majority count O(26) = O(1)
                 for ch in window:
                     majority_count = max(majority_count, window[s[left]])
 
