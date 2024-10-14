@@ -14,7 +14,7 @@
 * [Two Pointer](two-pointer.md)
 * [Sliding window](sliding-window/README.md)
   * [🟢 Best Time to Buy and Sell Stock](sliding-window/best-time-to-buy-and-sell-stock.md)
-  * [Longest Substring Without Repeating Characters](sliding-window/longest-substring-without-repeating-characters.md)
+  * [🟡 Longest Substring Without Repeating Characters](sliding-window/longest-substring-without-repeating-characters.md)
 * [Stack](stack.md)
 * [Binary Search](binary-search.md)
 * [💯 Linked List](linked-list/README.md)
