@@ -1,4 +1,4 @@
-# Maximum Depth of Binary Tree
+# 🟢 Maximum Depth of Binary Tree
 
 Given the `root` of a binary tree, return _its maximum depth_.
 
