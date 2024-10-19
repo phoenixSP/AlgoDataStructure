@@ -28,6 +28,7 @@
   * [🟡 Evaluate Reverse Polish Notation](stack/evaluate-reverse-polish-notation.md)
   * [🟡 Generate Parentheses](stack/generate-parentheses.md)
   * [🟡 Daily Temperatures](stack/daily-temperatures.md)
+  * [🔴 Basic Calculator](stack/basic-calculator.md)
 * [Binary Search](binary-search/README.md)
   * [🟢 Binary Search](binary-search/binary-search.md)
   * [🟡 Search in Rotated Sorted Array](binary-search/search-in-rotated-sorted-array.md)
