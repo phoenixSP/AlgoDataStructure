@@ -85,6 +85,7 @@
   * [🟡 House Robber II](dynamic-programming/house-robber-ii.md)
   * [🟡 Longest Palindromic Substring](dynamic-programming/longest-palindromic-substring.md)
   * [🟡 Palindromic Substrings](dynamic-programming/palindromic-substrings.md)
+  * [🟡 Decode Ways](dynamic-programming/decode-ways.md)
 * [Extras](extras/README.md)
   * [🟡 Subarray sum equals k](extras/subarray-sum-equals-k.md)
 * [Design problems](design-problems/README.md)
