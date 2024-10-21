@@ -10,7 +10,6 @@ Implement the `LRUCache` class:
 
 The functions `get` and `put` must each run in `O(1)` average time complexity.
 
-{% code overflow="wrap" %}
 ```python
 class Node():
     def __init__(self, key=None, value=0):
@@ -59,7 +58,7 @@ class LRUCache:
             node.value = value
         else:
             node = Node(key, value)
-        self.map[key] = node
+            self.map[key] = node
         self._insert(self.map[key]) 
 
         if len(self.map) > self.capacity:
@@ -67,6 +66,4 @@ class LRUCache:
             lru = self.head.next
             _ = self._remove(lru)
             del self.map[lru.key]
-
 ```
-{% endcode %}

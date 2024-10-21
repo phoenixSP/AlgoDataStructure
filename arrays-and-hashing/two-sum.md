@@ -14,7 +14,7 @@ class Solution:
         Brute force solution: 
         compare each pair combination for their sum. Do this using nested loop. i iterates over the entire length, and j iterates from i+1 to end of array
 
-        Another solution: Sort the array, and have two pointers from each end for the search
+        Another solution: Sort the array, and have two pointers from each end for the search. This has TC O(nlogn) and SC O(1)
 
         Solution:
         - Create a hashmap to same the array value in dict key and array index in dict value
