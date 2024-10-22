@@ -22,6 +22,7 @@ Given a string `s`, return _the longest_ _palindromic_ _substring_ in `s`.
 
 There are two solutions discussed here: One is a DP solution, other is an expansion from center solution. Both take O(n^2) time to complete.&#x20;
 
+{% code overflow="wrap" %}
 ```python
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -69,6 +70,7 @@ class Solution:
         
         return s[start: start + maxlen]
 ```
+{% endcode %}
 
 The solution using expansion for center is below
 
@@ -94,6 +96,7 @@ class Solution:
         start = 0
 
         for i in range(n):
+            # odd palindrome case
             left, right = i, i
             while left >= 0 and right < n and s[left] == s[right]:
                 if maxlen < (right - left + 1):
@@ -102,6 +105,7 @@ class Solution:
                 left -= 1
                 right += 1
             
+            # even palindrome case
             left, right = i, i+1
             while left >= 0 and right < n and s[left] == s[right]:
                 if maxlen < (right - left + 1):

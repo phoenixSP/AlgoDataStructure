@@ -34,22 +34,9 @@ Given a string `s`, find the length of the **longest** **substring** without rep
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         '''
-        Rough: 
-
-        LENGTH of LONGEST SUBSTRING without repeating characters
-        Dictionary to keep characters in window and their index
-        Once a character is repeated, we can move window to min(index+1, right)
-        Make sure to remove all the characters that were moved out of the window
-
-        left = min(index+1, right)
-        right += 1
-
-        abcabcbb -> window: abc; length 3; map-> (a,3), (b,4), (c,2), 
-
-
         Solution:
-        - Define sliding window starting and ending at 0, and a char map for the curr window
-        - keep incrementing right till last occurence of char
+        - Define sliding window starting and ending at 0, and a char set for the curr window
+        - keep incrementing right while curr char is not in set
         - If char in set, remove all characters present in window till (and including) curr char
         - Update left and right accordingly
 
@@ -65,30 +52,21 @@ class Solution:
         '''
 
         if s is None or len(s) == 0:
-            return 0
-        
-        if len(s) == 1:
-            return 1
+            return 0 
 
-        window = {}
-        left, right=0, 0
-        length = 0
+        char_set = set()
+        left, right = 0, 0
+        max_len = 0
 
-        while right < len(s):
-
+        for right in range(len(s)):
             char = s[right]
-            if char in window:
-                # move left to last char occurence and remove chars
-                last_occurence = window[char]
-                while left <= last_occurence:
-                    window[s[left]] -= 1
-                    if window[s[left]] == 0:
-                        del window[s[left]] #O(1)
-                    left += 1
-            window[char] = right
-            length = max(length, right - left + 1)
-            right += 1
-        
-        return length
+            while char in char_set: # 
+                char_set.remove(s[left])
+                left += 1
+            
+            char_set.add(char)
+            max_len = max(max_len, right - left + 1)
+            
+        return max_len        
 ```
 {% endcode %}

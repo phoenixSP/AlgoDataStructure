@@ -19,18 +19,18 @@ Given `n` non-negative integers representing an elevation map where the width of
 </strong><strong>Output: 9
 </strong></code></pre>
 
-&#x20;
-
 **Constraints:**
 
 * `n == height.length`
 * `1 <= n <= 2 * 104`
 * `0 <= height[i] <= 105`
 
+{% code overflow="wrap" %}
 ```python
 class Solution:
     def trap(self, height: List[int]) -> int:
         '''
+        Thought process: Think of the heights as edges of the container. leftMax is the max of the left hand side seen till now and rightMax is the max of the right handside seen till right. Now, left has two (or three) potential boundaries: right, max between right and left that is the true right max and leftMax. Now, the water at left is determined by the smallest boundary. If right > left, then it means left is already smaller than right Now the leftMax becomes the left edge of the container, and its height of water is now determined by the leftMax.
         Water is determinded by the leftMax when left < right because even if rightMax has the potential to be larger than right, the max water height will be limited by left.. so to check how much water left can have, we have to look at the left side max.
 
         TC: O(n)
@@ -44,7 +44,6 @@ class Solution:
         leftMax, rightMax = height[left], height[right]
 
         water = 0
-        
         while left < right:
             if height[left] < height[right]:
                 water += max(leftMax - height[left], 0)
@@ -57,3 +56,4 @@ class Solution:
         
         return water
 ```
+{% endcode %}

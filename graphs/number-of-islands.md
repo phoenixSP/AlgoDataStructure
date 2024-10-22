@@ -14,7 +14,7 @@ class Solution:
         visited.add((r,c))
 
         while queue:
-            row, col = queue.popleft() # O(logn)
+            row, col = queue.popleft() # O(1)
             directions = [[0,1], [1,0], [-1,0], [0,-1]]
 
             for dr, dc in directions:
@@ -41,4 +41,41 @@ class Solution:
                     num += 1
         
         return num
+```
+
+DFS alternative without visited
+
+```python
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        '''
+        count the number of connected components
+
+        '''
+        if grid is None or len(grid) == 0 or len(grid[0]) == 0:
+            return 0
+
+        n_rows, n_cols = len(grid), len(grid[0])
+        count = 0
+        
+        def dfs(i, j):
+
+            # check if the conditions are valid:
+            if i < 0 or j < 0 or i >= n_rows or j >= n_cols or grid[i][j] == "0":
+                return 
+
+            if grid[i][j] == "1":
+                grid[i][j] = "0"
+                dfs(i+1, j)
+                dfs(i, j+1)
+                dfs(i-1, j)
+                dfs(i, j-1)
+            return
+        
+        for i in range(n_rows):
+            for j in range(n_cols):
+                if grid[i][j] == "1":
+                    dfs(i, j)
+                    count += 1
+        return count
 ```
