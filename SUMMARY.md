@@ -104,3 +104,4 @@
   * [🟡 GPT Dataset](ml-coding/gpt-dataset.md)
   * [🔴 Self Attention](ml-coding/self-attention.md)
   * [🟡 Multi Headed Self Attention](ml-coding/multi-headed-self-attention.md)
+  * [Transformer Block](ml-coding/transformer-block.md)
