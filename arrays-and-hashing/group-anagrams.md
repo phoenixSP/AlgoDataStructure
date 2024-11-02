@@ -11,7 +11,7 @@ class Solution:
         '''
         Brute Force:
         - Sort each string and then check compare if combinations are equal 
-        - TC: m* nlogn (n=average length of string, m=#of strings)
+        - TC: m^2* nlogn (n=average length of string, m=#of strings)
         
         Another suboptimal solution:
         Get the hashmap of each string and compare the hashmaps of all combinations 
