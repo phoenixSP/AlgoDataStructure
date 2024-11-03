@@ -56,6 +56,7 @@
   * [🟢 Binary Tree Diameter](tree/binary-tree-diameter.md)
   * [🟡 Binary tree right side view](tree/binary-tree-right-side-view.md)
   * [🟡 Count Good Nodes In Binary Tree](tree/count-good-nodes-in-binary-tree.md)
+  * [🟢 Maximum Depth of Binary Tree](tree/maximum-depth-of-binary-tree-1.md)
 * [💯 Heap/Priority Queue](heap-priority-queue/README.md)
   * [🔴 Find Median from Data Stream](heap-priority-queue/find-median-from-data-stream.md)
   * [🔴 Merge K sorted lists](heap-priority-queue/merge-k-sorted-lists.md)
