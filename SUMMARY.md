@@ -42,7 +42,7 @@
   * [🔴 Merge K sorted lists](linked-list/merge-k-sorted-lists.md)
   * [🟡 LRU Cache](linked-list/lru-cache.md)
   * [🟡 Add two numbers](linked-list/add-two-numbers.md)
-* [Tree](tree/README.md)
+* [💯 Tree](tree/README.md)
   * [🟢 Invert Binary Tree](tree/invert-binary-tree.md)
   * [🟢 Maximum Depth of Binary Tree](tree/maximum-depth-of-binary-tree.md)
   * [🟢 Same Tree](tree/same-tree.md)

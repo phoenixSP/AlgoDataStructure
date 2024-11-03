@@ -1,4 +1,4 @@
-# Tree
+# 💯 Tree
 
 * Hierachical abstract data structure with a set of connected nodes
 * Each node can be connected to many children, but a child must have only one parent. The root node is the exception to this rule, which has no parent
