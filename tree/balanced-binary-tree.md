@@ -2,6 +2,35 @@
 
 Given a binary tree, determine if it is **height-balanced**.
 
+&#x20;
+
+**Example 1:**
+
+![](https://assets.leetcode.com/uploads/2020/10/06/balance\_1.jpg)
+
+<pre><code><strong>Input: root = [3,9,20,null,null,15,7]
+</strong><strong>Output: true
+</strong></code></pre>
+
+**Example 2:**
+
+![](https://assets.leetcode.com/uploads/2020/10/06/balance\_2.jpg)
+
+<pre><code><strong>Input: root = [1,2,2,3,3,null,null,4,4]
+</strong><strong>Output: false
+</strong></code></pre>
+
+**Example 3:**
+
+<pre><code><strong>Input: root = []
+</strong><strong>Output: true
+</strong></code></pre>
+
+**Constraints:**
+
+* The number of nodes in the tree is in the range `[0, 5000]`.
+* `-104 <= Node.val <= 104`
+
 {% code overflow="wrap" %}
 ```python
 class Solution:
