@@ -47,3 +47,5 @@ class Solution:
         return res
 ```
 {% endcode %}
+
+The heap can store (distance, i, pt). While we iterate of the list of points, we check if the current distance is smaller than top(heap). If yes, then pop first, and then add the element. This is wrong, because then insted of popping the largest element in the heap, we are popping the second smallest one. So, we HAVE TO use a data structure that enables us to pop the biggest element till now, which would be a max heap.&#x20;
