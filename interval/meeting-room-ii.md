@@ -11,6 +11,7 @@ The intuition behind this is as follows:&#x20;
 * Add the current interval end time to the heap
 * Check the heap size and update the max rooms variable if the current heap length is bigger.
 
+{% code overflow="wrap" %}
 ```python
 import heapq
 
@@ -37,6 +38,7 @@ def find_sets(intervals):
     
     return max_rooms
 ```
+{% endcode %}
 
 ## Option 2
 

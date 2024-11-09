@@ -45,5 +45,23 @@ class Solution:
             adj_dict[n2].append(n1)
         
         return dfs(0,-1) and n == len(visited)
+        
+'''
+n = 3, [1,2], [1,3]
+    1
+2     3
+
+1 -> 2, 3
+2 -> 1
+3 -> 1
+
+2, 1 -> 
+
+3 , 1 -> 
+
+'''
 ```
 {% endcode %}
+
+
+

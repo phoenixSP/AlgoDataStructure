@@ -13,7 +13,7 @@ def overlapping_meetings(meetings):
     
     for start, end in meetings[1:]:
         if prev_end > start:
-            # previous meeting ends before current meeting starts
+            # previous meeting ends after current meeting starts
             return False
         prev_end = end
     return True

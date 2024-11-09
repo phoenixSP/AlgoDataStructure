@@ -32,6 +32,7 @@ There may exists other ways to achieve this answer too.
 
 Intuitive solution&#x20;
 
+{% code overflow="wrap" %}
 ```python
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
@@ -80,18 +81,20 @@ class Solution:
                 window[s[left]] -= 1
                 left += 1
 
-                # recalulcate majority count O(26) = O(1)
-                for ch in window:
-                    majority_count = max(majority_count, window[s[left]])
+                # this is wrong
+                # and unnecessary. If we saw a window with x max freq, we would compare all subsequent windows with that freq, until we find a bigger window. So always update the length if case its bigger
+                # # recalulcate majority count O(26) = O(1)
+                # for ch in window:
+                #     majority_count = max(majority_count, window[s[left]])
 
-                # calculat
             length = max(length, right - left + 1)
             right += 1
 
         return length
 ```
+{% endcode %}
 
-Slightly optimized solution: TC remains the same&#x20;
+Slightly optimized solution: TC remains the same (exactly same now: update 11/04)
 
 {% code overflow="wrap" %}
 ```python

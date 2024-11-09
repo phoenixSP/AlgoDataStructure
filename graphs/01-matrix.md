@@ -18,8 +18,8 @@ class Solution:
         - if an position is a 1 and has 0 in its neighborhood, then the distance is 1
         - if the position is a 1 with no 0 in its neighborhood, then its distance is min(all neighbor's distance) + 1
 
-        TC: DFS O(|V| + |E|)
-        SC: O(|V|)
+        TC: DFS O(m*n)
+        SC: O(m*n)
         
         Note: Implicit Visit Tracking is done when the distance is updated from inf to standard number, thats why visited set is not needed
         '''

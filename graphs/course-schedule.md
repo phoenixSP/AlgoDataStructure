@@ -14,6 +14,7 @@ Return `true` if you can finish all courses. Otherwise, return `false`.
 * `0 <= ai, bi < numCourses`
 * All the pairs prerequisites\[i] are **unique**.
 
+{% code overflow="wrap" %}
 ```python
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
@@ -55,3 +56,4 @@ class Solution:
 
         return True
 ```
+{% endcode %}
